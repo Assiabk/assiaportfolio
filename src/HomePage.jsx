@@ -8,7 +8,8 @@ import { FiGithub, FiLinkedin, FiInstagram, FiMail, FiX } from "react-icons/fi";
 import assiaImg from "./assia.png";
 import bkServicesImg from"./bkservices.png";
 import asiaSkinImg from "./skin.png";
-import  ghardaiaHotelImg from "./ghardaia.png"
+import  ghardaiaHotelImg from "./ghardaia.png";
+import photographyImg from"./photographie.png";
 export default function HomePage() {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -220,6 +221,8 @@ export default function HomePage() {
       color: "from-emerald-500 to-teal-400",
       link: "https://ghardaia-booking.web.app/",
       image: ghardaiaHotelImg
+    },{
+      title: "Photography Site", desc: "A minimalist photography portfolio to showcase beautiful visual stories and shots.", tech: ["React", "Tailwind CSS"], color: "from-indigo-500 to-purple-500", link: "https://photographiesiteassia.vercel.app/", image: photographyImg 
     }
   ].map(({ title, desc, tech, color, link, image }) => (
     <motion.div
