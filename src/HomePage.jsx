@@ -10,6 +10,7 @@ import bkServicesImg from "./bkservices.png";
 import asiaSkinImg from "./skin.png";
 import ghardaiaHotelImg from "./ghardaia.png";
 import photographyImg from "./photographie.png";
+import voiceImg from "./voiceimg.png";
 // Mobile mockup images
 import calcAppMockup from "./educappmain.png";
 import bookingAppMockup from "./bkmain.png";
@@ -208,7 +209,15 @@ export default function HomePage() {
               color: "from-indigo-500 to-purple-500",
               link: "https://photographiesiteassia.vercel.app/",
               image: photographyImg,
+            },  {
+              title: "Voice over portfolio",
+              desc: "A minimalist portfolio designed to showcase stunning visual stories and shots, capturing the essence of each frame with clarity and elegance.",
+              tech: ["React", "Tailwind CSS"],
+              color: "from-indigo-500 to-purple-500",
+              link: "https://voiceoverportfolio.vercel.app/",
+              image: voiceImg,
             },
+
           ].map(({ title, desc, tech, color, link, image }) => (
             <motion.div
               key={title}
@@ -248,8 +257,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* MOBILE PROJECTS */}
-   {/* MOBILE APPS SECTION */}
+ 
 <section className="py-20 px-8 max-w-6xl mx-auto">
   <motion.h2 
     className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500 text-center mb-16"
